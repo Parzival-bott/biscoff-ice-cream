@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentSlide === 1) startTyping();
 
     // confetti only on FINAL slide (index 3)
-    if (currentSlide === 3) startConfetti();
+    if (currentSlide === 1 || currentSlide === 2 || currentSlide === 3) startConfetti();
     else stopConfetti();
   }
 
@@ -80,14 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
     heart.innerHTML = '❤️';
 
     heart.style.left = Math.random() * 100 + 'vw';
-    heart.style.fontSize = (14 + Math.random() * 20) + 'px';
+    heart.style.fontSize = (18 + Math.random() * 40) + 'px';
     heart.style.animationDuration = (4 + Math.random() * 3) + 's';
 
     heartsContainer.appendChild(heart);
     setTimeout(() => heart.remove(), 7000);
   }
 
-  setInterval(createHeart, 800);
+  setInterval(createHeart, 300);
 
   /* CONFETTI */
   const confettiContainer = document.getElementById('confetti');
