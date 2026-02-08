@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentSlide === 1) startTyping();
 
     // confetti only on FINAL slide (index 3)
-    if (currentSlide === 1 || currentSlide === 2 || currentSlide === 3) startConfetti();
+    if (currentSlide === 0 || currentSlide === 1 || currentSlide === 2 || currentSlide === 3) startConfetti();
     else stopConfetti();
   }
 
