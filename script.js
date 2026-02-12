@@ -19,8 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentSlide === 1) startTyping();
 
     // confetti only on FINAL slide (index 3)
-    if (currentSlide !=0) startConfetti();
-    else stopConfetti();
+    if (currentSlide != 0) {
+  startConfetti();
+  startFlowers();
+} else {
+  stopConfetti();
+  stopFlowers();
+}
+
   }
 
   /* NAVIGATION */
@@ -91,6 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* CONFETTI */
   const confettiContainer = document.getElementById('confetti');
+  const flowerContainer = document.getElementById('flowers');
+  let flowerInterval = null;
   let confettiInterval = null;
 
   function startConfetti() {
@@ -114,4 +122,31 @@ document.addEventListener('DOMContentLoaded', () => {
     confettiInterval = null;
   }
 
+  /* FLOWERS */
+
+function startFlowers() {
+  if (flowerInterval) return;
+
+  flowerInterval = setInterval(() => {
+    const flower = document.createElement('div');
+    flower.className = 'flower';
+
+    const emojis = ['🌸', '🌹', '🌺', '🌼'];
+    flower.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+
+    flower.style.left = Math.random() * 100 + 'vw';
+    flower.style.animationDuration = (4 + Math.random() * 3) + 's';
+
+    flowerContainer.appendChild(flower);
+
+    setTimeout(() => flower.remove(), 7000);
+  }, 500);
+}
+
+function stopFlowers() {
+  clearInterval(flowerInterval);
+  flowerInterval = null;
+}
+
 });
+
