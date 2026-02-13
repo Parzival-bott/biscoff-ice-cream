@@ -297,7 +297,7 @@ body::before {
   background-repeat: no-repeat;
   background-position:
     left 50px top 30px,
-    right 30px bottom 375px,
+    right 50px bottom 30px,
     left 50px bottom -25px;
 
   background-size: 350px, 350px, 300px;
@@ -305,6 +305,7 @@ body::before {
   pointer-events: none;
   z-index: 0;
 }
+
 
 
 
