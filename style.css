@@ -295,17 +295,19 @@ body::before {
     url("images/balloon3.png"),
     url("images/balloon4.png");
 
-  background-repeat: no-repeat;
+ background-repeat: no-repeat;
   background-position:
     left 50px top 30px,
     right 50px bottom 30px,
-    left 50px bottom -25px;
+    left 50px bottom -25px,
+    right 50px top 30px;
 
-  background-size: 350px, 350px, 300px;
+  background-size: 350px, 350px, 300px, 300px;
 
   pointer-events: none;
   z-index: 0;
 }
+
 
 
 
