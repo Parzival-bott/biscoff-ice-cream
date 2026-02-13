@@ -86,14 +86,14 @@ document.addEventListener('DOMContentLoaded', () => {
     heart.innerHTML = '❤️';
 
     heart.style.left = Math.random() * 100 + 'vw';
-    heart.style.fontSize = (18 + Math.random() * 40) + 'px';
+    heart.style.fontSize = (18 + Math.random() * 25) + 'px';
     heart.style.animationDuration = (4 + Math.random() * 3) + 's';
 
     heartsContainer.appendChild(heart);
     setTimeout(() => heart.remove(), 7000);
   }
 
-  setInterval(createHeart, 300);
+  setInterval(createHeart, 500);
 
   /* CONFETTI */
   const confettiContainer = document.getElementById('confetti');
