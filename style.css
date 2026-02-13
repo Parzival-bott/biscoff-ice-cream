@@ -289,13 +289,13 @@ body::before {
   width: 100%;
   height: 100%;
 
- background-image:
+  background-image:
     url("images/balloon2.png"),
     url("images/balloon1.png"),
     url("images/balloon3.png"),
     url("images/balloon4.png");
 
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position:
     left 50px top 30px,
     right 50px bottom 30px,
@@ -307,10 +307,4 @@ body::before {
   pointer-events: none;
   z-index: 0;
 }
-
-
-
-
-
-
 
