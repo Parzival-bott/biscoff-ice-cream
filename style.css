@@ -308,3 +308,12 @@ body::before {
   z-index: 0;
 }
 
+/* MOBILE HEADING FIX */
+@media (max-width: 600px) {
+  .slide h1 {
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+    padding: 0 12px;
+  }
+}
