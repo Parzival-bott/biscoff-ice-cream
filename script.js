@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* TYPING EFFECT */
   const message =
-    "You are kind, beautiful, strong, and everything I ever wished for. Life feels perfect with you by my side 💖";
+    "You are kind😊, beautiful😍, pretty💕, strong💪, the most cutest😘 and everything I ever wished for🤌.";
   const typeText = document.getElementById('typeText');
   let charIndex = 0;
   let typingInterval;
